@@ -1,0 +1,58 @@
+# Dépendances
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Environnement
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dossiers de build
+/build
+/dist
+
+# Fichiers de système d'exploitation
+.DS_Store
+Thumbs.db
+
+# Fichiers d'éditeurs
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.classpath
+.settings/
+
+# Fichiers de couverture de tests
+coverage/
+
+# Fichiers temporaires
+tmp/
+temp/
+
+# Fichiers de base de données
+*.sqlite
+*.sqlite3
+
+# Fichiers de déploiement
+.vercel
+.netlify
+.serverless/
+
+# Fichiers spécifiques à l'application
+uploads/
+public/uploads/
