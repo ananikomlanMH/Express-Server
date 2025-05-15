@@ -64,7 +64,7 @@ server/
 
 1. Cloner le dépôt
    ```bash
-   git clone [url-du-repo]
+   git clone https://github.com/ananikomlanMH/Express-Server.git
    cd Todo-React/Server
    ```
 
