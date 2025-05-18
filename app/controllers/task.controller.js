@@ -47,7 +47,10 @@ exports.findAll = (req, res) => {
     include: [{
       model: Personnel,
       as: 'personnel'
-    }]
+    }],
+   order:[
+     ['dateEcheance', 'DESC'],
+   ]
   })
     .then(data => {
       res.send(data);

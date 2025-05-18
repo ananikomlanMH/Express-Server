@@ -11,47 +11,103 @@ const seedPersonnels = async () => {
       return;
     }
 
-    // Données de test pour le personnel
+    // Données de test pour le personnel nigérien
     const personnelData = [
       {
-        nom: "Dupont",
-        prenom: "Jean",
-        email: "jean.dupont@example.com",
-        telephone: "0123456789",
+        nom: "Abdou",
+        prenom: "Ibrahim",
+        email: "ibrahim.abdou@example.com",
+        telephone: "+22790123456",
         poste: "Développeur",
         departement: "Informatique"
       },
       {
-        nom: "Martin",
-        prenom: "Sophie",
-        email: "sophie.martin@example.com",
-        telephone: "0234567890",
+        nom: "Issoufou",
+        prenom: "Aïcha",
+        email: "aicha.issoufou@example.com",
+        telephone: "+22791234567",
         poste: "Designer",
         departement: "Marketing"
       },
       {
-        nom: "Dubois",
-        prenom: "Pierre",
-        email: "pierre.dubois@example.com",
-        telephone: "0345678901",
+        nom: "Mahamadou",
+        prenom: "Ousmane",
+        email: "ousmane.mahamadou@example.com",
+        telephone: "+22792345678",
         poste: "Chef de projet",
         departement: "Gestion de projet"
       },
       {
-        nom: "Leroy",
-        prenom: "Marie",
-        email: "marie.leroy@example.com",
-        telephone: "0456789012",
+        nom: "Moussa",
+        prenom: "Fatima",
+        email: "fatima.moussa@example.com",
+        telephone: "+22793456789",
         poste: "Analyste",
         departement: "Informatique"
       },
       {
-        nom: "Moreau",
-        prenom: "Thomas",
-        email: "thomas.moreau@example.com",
-        telephone: "0567890123",
+        nom: "Amadou",
+        prenom: "Mariama",
+        email: "mariama.amadou@example.com",
+        telephone: "+22794567890",
         poste: "Testeur",
         departement: "Qualité"
+      },
+      {
+        nom: "Boubacar",
+        prenom: "Hadiza",
+        email: "hadiza.boubacar@example.com",
+        telephone: "+22795678901",
+        poste: "Administrateur système",
+        departement: "Informatique"
+      },
+      {
+        nom: "Souleymane",
+        prenom: "Fati",
+        email: "fati.souleymane@example.com",
+        telephone: "+22796789012",
+        poste: "Responsable marketing",
+        departement: "Marketing"
+      },
+      {
+        nom: "Yacouba",
+        prenom: "Amina",
+        email: "amina.yacouba@example.com",
+        telephone: "+22797890123",
+        poste: "Comptable",
+        departement: "Finance"
+      },
+      {
+        nom: "Issa",
+        prenom: "Ramatou",
+        email: "ramatou.issa@example.com",
+        telephone: "+22798901234",
+        poste: "Ressources humaines",
+        departement: "Administration"
+      },
+      {
+        nom: "Mamane",
+        prenom: "Zeinabou",
+        email: "zeinabou.mamane@example.com",
+        telephone: "+22799012345",
+        poste: "Développeur mobile",
+        departement: "Informatique"
+      },
+      {
+        nom: "Adamou",
+        prenom: "Salamatou",
+        email: "salamatou.adamou@example.com",
+        telephone: "+22780123456",
+        poste: "Analyste de données",
+        departement: "Informatique"
+      },
+      {
+        nom: "Sani",
+        prenom: "Balkissa",
+        email: "balkissa.sani@example.com",
+        telephone: "+22781234567",
+        poste: "Chef de produit",
+        departement: "Marketing"
       }
     ];
 

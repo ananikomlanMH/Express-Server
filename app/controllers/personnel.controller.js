@@ -81,7 +81,8 @@ exports.findOneWithTasks = (req, res) => {
   Personnel.findByPk(id, {
     include: [{
       model: Task,
-      as: 'taches'
+      as: 'taches',
+      order: [['dateEcheance', 'DESC']]
     }]
   })
     .then(data => {

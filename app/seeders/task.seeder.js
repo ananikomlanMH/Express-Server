@@ -25,7 +25,7 @@ const seedTasks = async () => {
 
     // Pour chaque personnel, créer quelques tâches
     for (const personnel of personnels) {
-      // Tâches pour le développeur (Jean Dupont)
+      // Tâches pour le développeur (Ibrahim Abdou)
       if (personnel.poste === "Développeur") {
         tasksData.push(
           {
@@ -58,7 +58,7 @@ const seedTasks = async () => {
         );
       }
       
-      // Tâches pour le designer (Sophie Martin)
+      // Tâches pour le designer (Aïcha Issoufou)
       else if (personnel.poste === "Designer") {
         tasksData.push(
           {
@@ -91,7 +91,7 @@ const seedTasks = async () => {
         );
       }
       
-      // Tâches pour le chef de projet (Pierre Dubois)
+      // Tâches pour le chef de projet (Ousmane Mahamadou)
       else if (personnel.poste === "Chef de projet") {
         tasksData.push(
           {
@@ -124,7 +124,7 @@ const seedTasks = async () => {
         );
       }
       
-      // Tâches pour l'analyste (Marie Leroy)
+      // Tâches pour l'analyste (Fatima Moussa)
       else if (personnel.poste === "Analyste") {
         tasksData.push(
           {
@@ -157,7 +157,7 @@ const seedTasks = async () => {
         );
       }
       
-      // Tâches pour le testeur (Thomas Moreau)
+      // Tâches pour le testeur (Mariama Amadou)
       else if (personnel.poste === "Testeur") {
         tasksData.push(
           {
@@ -183,6 +183,237 @@ const seedTasks = async () => {
             description: "Vérifier que l'application fonctionne sur différents appareils mobiles",
             dateEcheance: new Date(2025, 5, 7), // 7 juin 2025
             priorite: "moyenne",
+            statut: "terminée",
+            realisee: true,
+            personnelId: personnel.id
+          }
+        );
+      }
+      
+      // Tâches pour l'administrateur système (Hadiza Boubacar)
+      else if (personnel.poste === "Administrateur système") {
+        tasksData.push(
+          {
+            titre: "Configurer le serveur de production",
+            description: "Installer et configurer le serveur pour le déploiement de l'application",
+            dateEcheance: new Date(2025, 5, 20), // 20 juin 2025
+            priorite: "haute",
+            statut: "en cours",
+            realisee: false,
+            personnelId: personnel.id
+          },
+          {
+            titre: "Mettre à jour les systèmes de sécurité",
+            description: "Appliquer les derniers correctifs de sécurité sur tous les serveurs",
+            dateEcheance: new Date(2025, 5, 25), // 25 juin 2025
+            priorite: "haute",
+            statut: "à faire",
+            realisee: false,
+            personnelId: personnel.id
+          },
+          {
+            titre: "Sauvegarder les bases de données",
+            description: "Effectuer une sauvegarde complète de toutes les bases de données",
+            dateEcheance: new Date(2025, 5, 10), // 10 juin 2025
+            priorite: "moyenne",
+            statut: "terminée",
+            realisee: true,
+            personnelId: personnel.id
+          }
+        );
+      }
+      
+      // Tâches pour le responsable marketing (Fati Souleymane)
+      else if (personnel.poste === "Responsable marketing") {
+        tasksData.push(
+          {
+            titre: "Lancer la campagne sur les réseaux sociaux",
+            description: "Coordonner le lancement de la campagne marketing sur toutes les plateformes",
+            dateEcheance: new Date(2025, 5, 30), // 30 juin 2025
+            priorite: "haute",
+            statut: "en cours",
+            realisee: false,
+            personnelId: personnel.id
+          },
+          {
+            titre: "Analyser les résultats de la dernière campagne",
+            description: "Compiler et analyser les données de performance de la campagne précédente",
+            dateEcheance: new Date(2025, 6, 5), // 5 juillet 2025
+            priorite: "moyenne",
+            statut: "à faire",
+            realisee: false,
+            personnelId: personnel.id
+          },
+          {
+            titre: "Préparer le matériel promotionnel",
+            description: "Finaliser les brochures et affiches pour le prochain événement",
+            dateEcheance: new Date(2025, 5, 15), // 15 juin 2025
+            priorite: "basse",
+            statut: "terminée",
+            realisee: true,
+            personnelId: personnel.id
+          }
+        );
+      }
+      
+      // Tâches pour le comptable (Amina Yacouba)
+      else if (personnel.poste === "Comptable") {
+        tasksData.push(
+          {
+            titre: "Préparer les états financiers mensuels",
+            description: "Compiler et analyser les données financières du mois",
+            dateEcheance: new Date(2025, 6, 5), // 5 juillet 2025
+            priorite: "haute",
+            statut: "à faire",
+            realisee: false,
+            personnelId: personnel.id
+          },
+          {
+            titre: "Traiter les factures des fournisseurs",
+            description: "Vérifier et payer les factures des fournisseurs",
+            dateEcheance: new Date(2025, 5, 20), // 20 juin 2025
+            priorite: "moyenne",
+            statut: "en cours",
+            realisee: false,
+            personnelId: personnel.id
+          },
+          {
+            titre: "Finaliser la déclaration fiscale",
+            description: "Préparer et soumettre la déclaration fiscale trimestrielle",
+            dateEcheance: new Date(2025, 5, 10), // 10 juin 2025
+            priorite: "haute",
+            statut: "terminée",
+            realisee: true,
+            personnelId: personnel.id
+          }
+        );
+      }
+      
+      // Tâches pour les ressources humaines (Ramatou Issa)
+      else if (personnel.poste === "Ressources humaines") {
+        tasksData.push(
+          {
+            titre: "Organiser les entretiens d'embauche",
+            description: "Planifier et coordonner les entretiens pour les nouveaux postes",
+            dateEcheance: new Date(2025, 5, 25), // 25 juin 2025
+            priorite: "haute",
+            statut: "en cours",
+            realisee: false,
+            personnelId: personnel.id
+          },
+          {
+            titre: "Mettre à jour le manuel des employés",
+            description: "Réviser et mettre à jour les politiques de l'entreprise",
+            dateEcheance: new Date(2025, 6, 10), // 10 juillet 2025
+            priorite: "moyenne",
+            statut: "à faire",
+            realisee: false,
+            personnelId: personnel.id
+          },
+          {
+            titre: "Traiter les demandes de congés",
+            description: "Examiner et approuver les demandes de congés des employés",
+            dateEcheance: new Date(2025, 5, 15), // 15 juin 2025
+            priorite: "basse",
+            statut: "terminée",
+            realisee: true,
+            personnelId: personnel.id
+          }
+        );
+      }
+      
+      // Tâches pour le développeur mobile (Zeinabou Mamane)
+      else if (personnel.poste === "Développeur mobile") {
+        tasksData.push(
+          {
+            titre: "Développer l'application mobile Android",
+            description: "Implémenter les fonctionnalités principales de l'application Android",
+            dateEcheance: new Date(2025, 6, 15), // 15 juillet 2025
+            priorite: "haute",
+            statut: "en cours",
+            realisee: false,
+            personnelId: personnel.id
+          },
+          {
+            titre: "Corriger les bugs de l'application iOS",
+            description: "Résoudre les problèmes signalés par les utilisateurs iOS",
+            dateEcheance: new Date(2025, 5, 25), // 25 juin 2025
+            priorite: "haute",
+            statut: "à faire",
+            realisee: false,
+            personnelId: personnel.id
+          },
+          {
+            titre: "Tester la compatibilité des appareils",
+            description: "Vérifier que l'application fonctionne sur différents modèles de smartphones",
+            dateEcheance: new Date(2025, 5, 10), // 10 juin 2025
+            priorite: "moyenne",
+            statut: "terminée",
+            realisee: true,
+            personnelId: personnel.id
+          }
+        );
+      }
+      
+      // Tâches pour l'analyste de données (Salamatou Adamou)
+      else if (personnel.poste === "Analyste de données") {
+        tasksData.push(
+          {
+            titre: "Analyser les données d'utilisation",
+            description: "Examiner les modèles d'utilisation de l'application et générer des rapports",
+            dateEcheance: new Date(2025, 5, 28), // 28 juin 2025
+            priorite: "haute",
+            statut: "en cours",
+            realisee: false,
+            personnelId: personnel.id
+          },
+          {
+            titre: "Créer des tableaux de bord de visualisation",
+            description: "Développer des tableaux de bord interactifs pour l'équipe de direction",
+            dateEcheance: new Date(2025, 6, 10), // 10 juillet 2025
+            priorite: "moyenne",
+            statut: "à faire",
+            realisee: false,
+            personnelId: personnel.id
+          },
+          {
+            titre: "Optimiser les requêtes d'analyse",
+            description: "Améliorer les performances des requêtes d'analyse de données",
+            dateEcheance: new Date(2025, 5, 12), // 12 juin 2025
+            priorite: "basse",
+            statut: "terminée",
+            realisee: true,
+            personnelId: personnel.id
+          }
+        );
+      }
+      
+      // Tâches pour le chef de produit (Balkissa Sani)
+      else if (personnel.poste === "Chef de produit") {
+        tasksData.push(
+          {
+            titre: "Définir la feuille de route du produit",
+            description: "Planifier les fonctionnalités et améliorations pour les six prochains mois",
+            dateEcheance: new Date(2025, 6, 5), // 5 juillet 2025
+            priorite: "haute",
+            statut: "en cours",
+            realisee: false,
+            personnelId: personnel.id
+          },
+          {
+            titre: "Analyser la concurrence",
+            description: "Effectuer une analyse détaillée des produits concurrents",
+            dateEcheance: new Date(2025, 5, 30), // 30 juin 2025
+            priorite: "moyenne",
+            statut: "à faire",
+            realisee: false,
+            personnelId: personnel.id
+          },
+          {
+            titre: "Préparer la présentation du nouveau produit",
+            description: "Créer une présentation pour le lancement du nouveau produit",
+            dateEcheance: new Date(2025, 5, 15), // 15 juin 2025
+            priorite: "haute",
             statut: "terminée",
             realisee: true,
             personnelId: personnel.id
